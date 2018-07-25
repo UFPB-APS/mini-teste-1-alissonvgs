@@ -2,6 +2,7 @@ public class LogicaVenda {
 
     private Custo iv = new ImpostoSobreVenda();
     private Custo seguro;
+    private double lucroTotal;
 
     public Custo getSeguro() {
         return seguro;
@@ -29,5 +30,15 @@ public class LogicaVenda {
         }
         
         return venda.getTotal();
+    }
+    
+    public double lucroTotal(Venda venda){
+        double lucroTotal = 0.0;
+        for(ItemVenda item: venda.getItens()){
+            if(item != null){
+                lucroTotal += item.getLucro();
+            }
+        }
+        return lucroTotal;
     }
 }

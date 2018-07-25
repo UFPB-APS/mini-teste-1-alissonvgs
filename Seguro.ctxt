@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=nome\ taxa
+comment0.target=Seguro(java.lang.String,\ double)
+comment1.params=venda
+comment1.target=double\ calcularCusto(Venda)
+numComments=2

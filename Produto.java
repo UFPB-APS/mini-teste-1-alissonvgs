@@ -3,13 +3,15 @@ public class Produto {
     private int id;
     private String descricao;
     private double precoReferencia;
+    private double precoCompra;
     
     public Produto() { }
     
-    public Produto(int id, String descricao, double precoReferencia) {
+    public Produto(int id, String descricao, double precoReferencia, double precoCompra) {
         this.id = id;
         this.descricao = descricao;
         this.precoReferencia = precoReferencia;
+        this.precoCompra = precoCompra;
     }
     
     public void setId(int id) {
@@ -41,4 +43,11 @@ public class Produto {
         setPrecoReferencia(getPrecoReferencia() + reajuste);
     }
 
+    public void setPrecoCompra(double precoCompra) {
+        this.precoCompra = precoCompra;
+    }
+    
+    public double getPrecoCompra() {
+        return precoCompra;
+    }
 }

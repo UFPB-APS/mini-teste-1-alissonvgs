@@ -36,12 +36,5 @@ public class Venda {
     public void setTotal(double total) {
         this.total = total;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+   
 }

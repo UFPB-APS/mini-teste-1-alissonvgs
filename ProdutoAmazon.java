@@ -4,8 +4,8 @@ public class ProdutoAmazon extends Produto {
         super();
     }
     
-    public ProdutoAmazon(int id, String descricao, double preco) {
-        super(id, descricao, preco);
+    public ProdutoAmazon(int id, String descricao, double preco, double precoCompra) {
+        super(id, descricao, preco, precoCompra);
     }
     
     public void reajustarPreco(double percentual) {
